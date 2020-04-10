@@ -1,0 +1,26 @@
+//question1
+#include<iostream>
+using namespace std;
+int main() {
+char a;
+int b;
+float c;
+double d;
+cout<<"size of char: "<<sizeof(a)<<" byte\n";
+cout<<"size of int: "<<sizeof(b)<<" bytes\n";
+cout<<"size of float: "<<sizeof(c)<<" bytes\n";
+cout<<"size of double: "<<sizeof(d)<<" bytes\n";
+return 0;
+}
+
+//question2
+#include<iostream>
+using namespace std;
+int main(){
+int a,b,c;
+cout<<"Enter two numbers: ";
+cin>>a>>b;
+c=a*b;
+cout<<"Product = "<<c;
+return 0;
+}
