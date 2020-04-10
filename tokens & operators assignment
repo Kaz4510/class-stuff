@@ -17,10 +17,9 @@ return 0;
 #include<iostream>
 using namespace std;
 int main(){
-int a,b,c;
+float a,b;
 cout<<"Enter two numbers: ";
 cin>>a>>b;
-c=a*b;
-cout<<"Product = "<<c;
+cout<<"Product = "<<a*b;
 return 0;
 }
