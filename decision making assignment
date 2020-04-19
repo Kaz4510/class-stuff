@@ -1,0 +1,47 @@
+//if-else
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,c;
+cout<<"enter a number which is between 0 and 100 ";
+cin>>a;
+if(a>100){
+if(a%2==0){
+cout<<"your number is even";
+else{
+cout<<"your number is odd";
+} 
+}else if(a>100){
+cout<<"invalid number as it exceeds the limit";
+}else{
+cout<<"invalid number as it is negative";
+}
+return 0;
+}
+
+
+//c++ Program to check Age of a user is eligible for voting or not
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int age;
+cout<<"enter age: ";
+cin>>age;
+if(age>=18){
+cout<<"If you have a voter ID enter 1, else enter 2\nYour choice: ";
+int n;
+cin>>n;
+if(n==1)
+cout<<"\nYou are eligible.";
+else
+cout<<"\nYou are not eligible.\nPlease regester for a voter Id to become eligible.";
+}
+else{
+cout<<"You are not eligible.\nYou will be eligible to vote in "<<18-age<<" ";
+puts(18-age>1?"years":"year");
+}
+return 0;
+}
