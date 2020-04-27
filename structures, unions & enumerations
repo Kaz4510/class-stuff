@@ -1,0 +1,39 @@
+//expressing a number as a sum of two prime
+#include <iostream>
+using namespace std;
+
+bool checkprime(int x);
+
+int main()
+{
+    int n,i;
+    bool flag= false;
+    
+    cout<<"enter a number: "<<endl;
+    cin>>n;
+    for(i=2;i<=n/2;++i){
+        if(checkprime(i)){
+            if(checkprime(n-i)){
+                cout<<n<<" = "<<i<<" + "<<n-i<<endl;
+                flag=true;
+            }
+        }
+    }
+    if(!flag)
+    cout<<"number can't be expressed as the sum of two prime number";
+    return 0;
+}
+
+bool checkprime(int x){
+    int a;
+    bool isPrime=true;
+    for(a=2;a<=x/2;a++){
+        if(x%a==0){
+            isPrime=false;
+            break;
+        }
+    }
+    return isPrime;
+}
+
+//
