@@ -1,3 +1,25 @@
+//program to fine factorial of a number
+#include<iostream>
+using namespace std;
+int factorial(int i);
+
+int main(){
+    int n;
+    cout<<"enter a positive number"<<endl;
+    cin>>n;
+    cout<<"factorial of "<<n<<" is "<<factorial(n);
+    return 0;
+}
+int factorial(int i){
+    int f;
+    if(i>1)
+    return i*factorial(i-1);
+    else 
+    return 1;
+}
+
+
+
 //expressing a number as a sum of two prime
 #include <iostream>
 using namespace std;
@@ -35,5 +57,3 @@ bool checkprime(int x){
     }
     return isPrime;
 }
-
-//
