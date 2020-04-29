@@ -1,0 +1,50 @@
+// reading time
+# include<iostream>
+using namespace std;
+class Time
+{
+	int m,s,h;
+	public:
+		void get(int p,int q,int r)
+		{
+			h=p;
+			m=q;
+			s=r;
+		}
+		void display()
+		{
+		    if((h<=24)&&(m<=60)&&(s<=60)){
+		    cout<<"The time is = ";
+		    if((h>9)&&(m>9)&&(s>9)){
+			cout<<h<<":"<<m<<":"<<s;
+		    }
+			else if((h>9)&&(m>9)){
+			    cout<<h<<":"<<m<<":"<<"0"<<s;
+			}
+			else if((h>9)){
+			    cout<<h<<":"<<"0"<<m<<":"<<"0"<<s;
+			}
+			else{
+			    cout<<"0"<<h<<":"<<"0"<<m<<":"<<"0"<<s;
+			}
+			cout<<"\nTime in total seconds: "<<(h*3600)+(m*60)+(s);
+		    }
+		    else{
+		        cout<<"Invalid time";
+		    }
+		}
+};
+int main()
+{
+	int p,q,r;
+	Time t;
+	cout<<"Enter time:"<<endl;
+	cout<<" Hours? ";
+	cin>>p;
+	cout<<" Minutes? ";
+	cin>>q;
+	cout<<" Seconds? ";
+	cin>>r;
+	t.get(p,q,r);
+	t.display();
+}
